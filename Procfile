@@ -1,1 +1,1 @@
-web: cd API && gunicorn --bind 0.0.0.0:8000 API.asgi:application
+web: cd API && gunicorn  API.asgi:application
