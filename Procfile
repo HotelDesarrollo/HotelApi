@@ -1,1 +1,1 @@
-web: gunicorn API.asgi --log-file -
+web: gunicorn --bind 0.0.0.0:8000 API.asgi:application

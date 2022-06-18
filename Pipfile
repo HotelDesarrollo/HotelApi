@@ -5,7 +5,6 @@ name = "pypi"
 
 [packages]
 django = "==3.2.13"
-psycopg2 = "==2.8.6"
 djangorestframework = "*"
 django-cors-headers = "*"
 djangorestframework-simplejwt = "*"
@@ -18,8 +17,9 @@ python-decouple = "*"
 psycopg2-binary = "*"
 twisted = "*"
 whitenoise = "*"
+asgi-redis = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"

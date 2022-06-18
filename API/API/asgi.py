@@ -15,9 +15,11 @@ from django.conf.urls import url
 from django.core.asgi import get_asgi_application
 from apps.websocket.consumers import Consumer
 from django.urls.conf import path
+import django
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'API.settings')
+django.setup()
 from .channelsmiddleware import JWTChannelMiddleware
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'API.settings')
 
 application = ProtocolTypeRouter({
     # (http->django views is added by default)
