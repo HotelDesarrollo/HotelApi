@@ -4,7 +4,6 @@ from django.db.models.signals import post_save, post_delete
 from django.dispatch import receiver
 from apps.websocket.signals import types_dict_convert
 
-
 from apps.alojamientos.models import Alojamiento
 
 
